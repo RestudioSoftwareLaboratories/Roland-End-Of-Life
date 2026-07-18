@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roland Script - End Of Life (EOL)</title>
+    <link href="https://fonts.cdnfonts.com/css/tiny5" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/press-start-2p" rel="stylesheet">
+    <link rel="icon" href="https://i.postimg.cc/66MLbbg8/restudio-profile.png" type="image/png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+            padding-bottom: 50px;
+        }
+        .navbar {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .navbar img { height: 40px; margin-right: 15px; }
+        .navbar h1 { font-family: 'Tiny5', sans-serif; font-size: 20px; margin: 0; color: #fff; }
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            font-family: 'Tiny5', sans-serif;
+            color: #222;
+        }
+        h1 {
+            font-size: 28px;
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        h2 {
+            font-size: 22px;
+            margin-top: 30px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 6px;
+        }
+        h3 {
+            font-size: 18px;
+            margin-top: 22px;
+            color: #333;
+        }
+        p { margin: 8px 0; }
+        ul { padding-left: 25px; }
+        li { margin-bottom: 4px; }
+        .cancelled-item {
+            color: #c0392b;
+            text-decoration: line-through;
+        }
+
+        /* EOL Badge - بنفس نمط version-badge */
+        .badge-eol {
+            display: inline-block;
+            background-color: #c0392b;
+            color: white;
+            font-size: 11px;
+            padding: 4px 8px;
+            margin-left: 8px;
+            font-family: 'Press Start 2P', cursive;
+            letter-spacing: 0.5px;
+            border-style: solid;
+            border-width: 3px;
+            border-color: #e87474 #7f1a1a #7f1a1a #e87474;
+            image-rendering: pixelated;
+            box-shadow: 0 0 0 1px #000;
+            text-shadow: 2px 2px 0 #7f1a1a;
+            line-height: 1.2;
+            vertical-align: middle;
+        }
+        .badge-eol:active {
+            border-color: #7f1a1a #e87474 #e87474 #7f1a1a;
+            transform: translate(1px, 1px);
+            box-shadow: none;
+        }
+
+        .meta-box {
+            background-color: #fcf3f0;
+            border-left: 4px solid #c0392b;
+            padding: 12px 18px;
+            margin: 15px 0;
+        }
+        .highlight-box {
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            padding: 14px 18px;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+        .highlight-box ul {
+            margin: 6px 0 0 0;
+        }
+        .signature {
+            margin-top: 35px;
+            padding: 20px;
+            background-color: #fafafa;
+            border-top: 2px solid #ddd;
+            text-align: center;
+        }
+        .signature .org {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .signature .date {
+            font-size: 18px;
+            font-weight: bold;
+            color: #a93226;
+            margin-top: 4px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 25px;
+            font-family: 'Tiny5', sans-serif;
+            color: #2980b9;
+            text-decoration: none;
+            border: 2px solid #2980b9;
+            padding: 6px 18px;
+            border-radius: 4px;
+            transition: 0.2s;
+        }
+        .back-link:hover {
+            background-color: #2980b9;
+            color: #fff;
+        }
+        .footer-note {
+            margin-top: 30px;
+            color: #777;
+            text-align: center;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <img src="https://i.postimg.cc/yYCszSyc/swrh-restudio.png" alt="Logo">
+    <h1>Docs</h1>
+</div>
+
+<div class="container">
+
+    <h1>
+        <span class="material-icons" style="font-size:28px; color:#c0392b;">error_outline</span>
+        End Of Life
+        <span class="badge-eol">EOL</span>
+    </h1>
+
+    <div class="meta-box">
+        <strong>Official Statement of Permanent Discontinuation</strong> &mdash; Effective <strong>June 19, 2026</strong>
+    </div>
+
+    <p><strong>Restudio Software Laboratories</strong> hereby formally announces the permanent discontinuation of the Roland Script programming language, including the termination of all development, technical support, and maintenance activities. The project, together with its associated editor, is hereby declared permanently discontinued and removed from all future development plans of the laboratories, effective <strong>June 19, 2026</strong>.</p>
+
+    <p>This decision is final, strategic, and irreversible. In the interest of transparency, Restudio Software Laboratories is publishing the technical, architectural, and practical reasons that led to the permanent retirement of the project and the withdrawal of its associated tools.</p>
+
+    <!-- القسم الأول -->
+    <h2>I. Technical and Architectural Reasons</h2>
+
+    <h3>Cancellation of Core Features Planned for Version 3.0</h3>
+    <p>During the planning phase of Roland Script v3.0, it became evident that the architecture of the existing interpreter was fundamentally incapable of supporting several essential language features. As a result, these features were permanently cancelled before implementation, including:</p>
+    <ul>
+        <li class="cancelled-item">Protected constants (<code>prove var</code>)</li>
+        <li class="cancelled-item">Logical comparison and relational operators (<code>younger than</code>, <code>greater than</code>)</li>
+        <li class="cancelled-item">Advanced logical operators (<code>and</code>, <code>or</code>, <code>xor</code>, <code>not</code>)</li>
+        <li class="cancelled-item">Reusable programming functions (<code>act! =</code>, <code>repass!</code>)</li>
+        <li class="cancelled-item">Alternative conditional branches (<code>other:</code>, <code>wrong other:</code>) and multi-selection structures (<code>SLbell</code>)</li>
+        <li class="cancelled-item">Range-based iteration (<code>&lt;range&gt;</code>)</li>
+    </ul>
+    <p>The limitations of both the interpreter and Restudio Script Editor 1.0 (RSE 1.0) prevented the language from evolving beyond a highly experimental state, making it unsuitable for practical software development.</p>
+
+    <h3>Absence of Standard Primitive Data Types</h3>
+    <p>Roland Script relies on a non-standard and simplistic parsing model. For example, textual values (Words) and characters are assigned without quotation marks (e.g., <code>X = ammar</code>). This parsing approach creates ambiguity between identifiers and literal values, preventing the implementation of advanced language features such as robust type handling, symbol resolution, and sophisticated function systems.</p>
+
+    <h3>Pointerless Array Implementation</h3>
+    <p>The language's array mechanism (<code>line for class</code>) is based on manually defined static variables and lacks support for dynamic indexing or pointer-based access. Consequently, arrays function primarily as containers for displaying stored values rather than as fully manipulable data structures.</p>
+
+    <h3>Conditional Execution Limitations</h3>
+    <p>The interpreter does not implement an Abstract Syntax Tree (AST). Instead, it processes source code sequentially on a line-by-line basis and skips lines using <code>currentLineIndex++</code> whenever a conditional expression evaluates to false. This architecture assumes that every conditional block occupies only a single line, making nested or complex conditional structures impractical.</p>
+
+    <!-- القسم الثاني -->
+    <h2>II. Editor Status and Source Code Closure</h2>
+
+    <h3>Retirement of Restudio Script Editor 1.0</h3>
+    <p>The official editor for Roland Script was <strong>Restudio Script Editor 1.0 (RSE)</strong>. The editor lacked essential development capabilities such as IntelliSense, structural code analysis, and integrated debugging tools. Due to these technical limitations, RSE 1.0 has been permanently retired.</p>
+
+    <div class="highlight-box">
+        <strong>⛔ Source Code Closure:</strong> The source code of both Roland Script and Restudio Script Editor 1.0 has been permanently closed and is no longer available for public distribution.
+    </div>
+
+    <h3>Restudio Script Editor Institutional Version (RSEIV)</h3>
+    <p>Following the retirement of RSE 1.0, Restudio Software Laboratories developed a new internal editor named <strong>Restudio Script Editor Institutional Version (RSEIV)</strong>.</p>
+    <ul>
+        <li>RSEIV is designed exclusively for industry-standard programming languages such as TSX, JavaScript, HTML, and related technologies.</li>
+        <li>RSEIV <strong>does not</strong> support Roland Script in any capacity.</li>
+        <li>RSEIV is an internal institutional product and is not publicly available. Access is granted only upon formal written approval from Restudio Support.</li>
+    </ul>
+
+    <!-- القسم الثالث -->
+    <h2>III. Practical Considerations</h2>
+
+    <h3>Zero User Adoption</h3>
+    <p>Internal usage monitoring and project evaluation determined that Roland Script had no active user base and was not being used in production or personal software projects. Continuing investment in a project without practical adoption was therefore deemed technically and strategically unjustifiable.</p>
+
+    <h3>Absence of an Ecosystem</h3>
+    <p>Roland Script never developed a sustainable software ecosystem. No external libraries, community-driven packages, development tools, or active contributor community emerged around the language, preventing it from reaching long-term viability.</p>
+
+    <!-- القسم الرابع -->
+    <h2>Impact of the Discontinuation</h2>
+
+    <div class="highlight-box" style="border-color:#c0392b; background-color:#fdedec;">
+        <p style="margin:0; font-weight:bold;">Effective immediately:</p>
+        <ul style="margin:6px 0 0 0;">
+            <li>No further updates, bug fixes, security patches, or feature releases will be provided for Roland Script or Restudio Script Editor 1.0.</li>
+            <li>No Community Edition, Lite Edition, successor, or future continuation of Roland Script is planned.</li>
+            <li>Any continued use of the legacy interpreter or existing Roland Script code is undertaken entirely at the user's own responsibility, given the architectural limitations and technical deficiencies described in this statement.</li>
+        </ul>
+    </div>
+
+    <p>Restudio Software Laboratories extends its appreciation to everyone who followed this experimental project during its development. The laboratories will continue focusing future efforts on modern software technologies built upon secure, maintainable, and industry-standard engineering principles.</p>
+
+    <!-- التوقيع -->
+    <div class="signature">
+        <div class="org">Restudio Software Laboratories</div>
+        <div style="font-size:14px; color:#555; margin-top:2px;">Official Date of Permanent Discontinuation</div>
+        <div class="date">June 19, 2026</div>
+    </div>
+
+    <!-- رابط العودة في أسفل الصفحة -->
+    <div style="text-align:center;">
+        <a href="#" onclick="history.back(); return false;" class="back-link">← Back to Documentation</a>
+    </div>
+
+    <div class="footer-note">
+        &copy; Restudio software laboratories &mdash; Archival Document
+    </div>
+
+</div>
+
+</body>
+</html>
